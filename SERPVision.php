@@ -13,7 +13,6 @@
 define("SERPVISION_API_KEY", "Your-SERP-Vison-API-Key");
 define("SERPVISION_ENDPOINT", "https://admin.serpVision.com/api");
 
-
 class SerpVision
 {
 // Constants
