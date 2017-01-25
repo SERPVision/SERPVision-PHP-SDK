@@ -8,7 +8,7 @@ The full documentation can be found on the website https://serpvision.com/api-en
 
 _Download_
 
-    git clone https://github.com/SERPVision/SERP-Vision-php-sdk
+    git clone https://github.com/SERPVision/SERPVision-php-sdk.git
 
 _Define API-key_
 
