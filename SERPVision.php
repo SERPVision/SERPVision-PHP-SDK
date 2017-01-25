@@ -19,7 +19,7 @@ class SerpVision
     const DESKTOP = 'desktop';
     const MOBILE = 'mobile';
     const TABLET = 'tablet';
-    const VERSION = 'v1.0.1';
+    const VERSION = 'v1.0.2';
 
 // Methods
     public function addKeyword($keywordName, $engineCode, $device)
