@@ -25,6 +25,22 @@ _Download_
 
 #Example<br>
 
-    $serpVision = new Serpvision($apiKey);
-
-    echo $serpVision->getCredit('s4fjois9034rffjsf0ddej092d');
+    use SERPVision\SERPVisionApi;
+     
+    const SERPVISION_API_KEY = "MY-API-KEY";
+     
+    $serpVision = new SERPVisionApi();
+     
+    $res = $serpVision->getCredit(SERPVISION_API_KEY);
+     
+    if ($res['status'] == 'ok') {
+        
+        // Display the credit
+        echo $res['credit'];
+    }
+    else {
+         
+        // Some error occurred
+        echo $res['message'];
+    }
+    
