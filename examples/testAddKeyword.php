@@ -11,12 +11,14 @@
 
 require_once '../SERPVision.php';
 
+define("SERPVISION_API_KEY", "MY-API-KEY");
+
 $serpVision = new SerpVision();
 $keywordName = 'Fietsen kopen'; // Keyword phrase
 $engineCode = 'google_nl-nl'; // Google engine code see https://serpvision.com/api-endpoints/#google-codes
 $device = SerpVision::DESKTOP;
 
-$res = $serpVision->addKeyword($keywordName, $engineCode, $device);
+$res = $serpVision->addKeyword($keywordName, $engineCode, $device, SERPVISION_API_KEY);
 
 // further processing ....
 if ($res['status'] == 'ok') {

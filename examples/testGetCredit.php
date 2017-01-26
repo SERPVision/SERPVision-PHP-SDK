@@ -11,9 +11,11 @@
 
 require_once '../SERPVision.php';
 
+define("SERPVISION_API_KEY", "MY-API-KEY");
+
 $serpVision = new SerpVision();
 
-$res = $serpVision->getCredit();
+$res = $serpVision->getCredit(SERPVISION_API_KEY);
 
 // further processing ....
 if ($res['status'] == 'ok') {

@@ -10,9 +10,12 @@
  *  *******************************************************
  */
 
-define("SERPVISION_ENDPOINT", "https://admin.serpVision.com/api");
+namespace SERPVision;
 
-class SerpVision
+define("SERPVISION_ENDPOINT", "https://admin.serpvision.com/api");
+
+
+class SERPVisionApi
 {
 // Constants
     const DESKTOP = 'desktop';

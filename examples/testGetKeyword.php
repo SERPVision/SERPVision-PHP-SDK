@@ -11,9 +11,11 @@
 
 require_once '../SERPVision.php';
 
+define("SERPVISION_API_KEY", "MY-API-KEY");
+
 $serpVision = new SerpVision();
 $id = 'yourId';
-$res = $serpVision->getKeyword($id);
+$res = $serpVision->getKeyword($id, SERPVISION_API_KEY);
 
 echo json_encode($res);
 
