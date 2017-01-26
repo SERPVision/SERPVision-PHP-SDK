@@ -9,14 +9,16 @@
  * permission of SERP Vision (Legal number: 59005068)
  *******************************************************/
 
+use SERPVision\SERPVisionApi;
+
 require_once '../SERPVision.php';
 
 define("SERPVISION_API_KEY", "MY-API-KEY");
 
-$serpVision = new SerpVision();
+$serpVision = new SERPVisionApi();
 $keywordName = 'Fietsen kopen'; // Keyword phrase
 $engineCode = 'google_nl-nl'; // Google engine code see https://serpvision.com/api-endpoints/#google-codes
-$device = SerpVision::DESKTOP;
+$device = SERPVisionApi::DESKTOP;
 
 $res = $serpVision->addKeyword($keywordName, $engineCode, $device, SERPVISION_API_KEY);
 

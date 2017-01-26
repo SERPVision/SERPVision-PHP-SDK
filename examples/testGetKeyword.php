@@ -13,7 +13,9 @@ require_once '../SERPVision.php';
 
 define("SERPVISION_API_KEY", "MY-API-KEY");
 
-$serpVision = new SerpVision();
+use SERPVision\SERPVisionApi;
+
+$serpVision = new SERPVisionApi();
 $id = 'yourId';
 $res = $serpVision->getKeyword($id, SERPVISION_API_KEY);
 
