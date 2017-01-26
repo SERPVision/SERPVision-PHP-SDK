@@ -4,18 +4,27 @@ This SDK is available for SERP Vision. You can use the API to provide SERP data 
 Request your API-Key here https://serpvision.com. <br><br>
 The full documentation can be found on the website https://serpvision.com/api-endpoints/
 
-**Get started**<br>
+#Get started
+
+**Install with composer (preferred)**
+
+Either run
+
+    $ php composer.phar require serp-vision/serp-vision-php-sdk "dev-master"
+
+or add
+
+    "serp-vision/serp-vision-php-sdk": "dev-master"
+to the require section of your composer.json file.
+
+**Without composer**<br>
 
 _Download_
 
     git clone https://github.com/SERPVision/SERPVision-php-sdk.git
 
-_Define API-key_
+#Example<br>
 
-    Define SERPVISION_API_KEY in the SERPVision.php file with your own API-key. 
+    $serpVision = new Serpvision($apiKey);
 
-**Example**<br>
-
-    $serpVision = new Serpvision();
-
-    echo $serpVision->getCredit();
+    echo $serpVision->getCredit('s4fjois9034rffjsf0ddej092d');

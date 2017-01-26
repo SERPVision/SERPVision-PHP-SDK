@@ -10,7 +10,6 @@
  *  *******************************************************
  */
 
-define("SERPVISION_API_KEY", "Your-SERP-Vison-API-Key");
 define("SERPVISION_ENDPOINT", "https://admin.serpVision.com/api");
 
 class SerpVision
@@ -22,7 +21,7 @@ class SerpVision
     const VERSION = 'v1.0.2';
 
 // Methods
-    public function addKeyword($keywordName, $engineCode, $device)
+    public function addKeyword($keywordName, $engineCode, $device, $apiKey)
     {
         $path = '/add';
         $options = [
@@ -31,30 +30,30 @@ class SerpVision
             'device' => $device,
         ];
 
-        return self::curl($path, $options);
+        return self::curl($path, $options, $apiKey);
     }
 
-    public function getCredit()
+    public function getCredit($apiKey)
     {
         $path = '/get-credit';
         $options = [];
 
-        return self::curl($path, $options);
+        return self::curl($path, $options, $apiKey);
     }
 
-    public function getKeyword($id)
+    public function getKeyword($id, $apiKey)
     {
         $path = '/get';
         $options = [
             'id' => $id,
         ];
 
-        return self::curl($path, $options);
+        return self::curl($path, $options, $apiKey);
     }
 
-    private static function curl($path, $options)
+    private static function curl($path, $options, $apiKey)
     {
-        $options['api-key'] = SERPVISION_API_KEY;
+        $options['api-key'] = $apiKey;
 
         $ch = curl_init();
 
