@@ -1,5 +1,5 @@
 {
-  "name": "SERPVision/SERPVision-php-sdk",
+  "name": "serp-vision/serp-vision-php-sdk",
   "type": "library",
   "description": "Interact with the SERP Vision API",
   "homepage": "https://github.com/SERPVision/SERPVision-php-sdk",
