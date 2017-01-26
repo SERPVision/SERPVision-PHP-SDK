@@ -15,6 +15,7 @@
     "psr-4": { "serp-vision\\": "" }
   },
   "require": {
-    "php": ">=5.3.0"
+    "php": ">=5.3.0",
+    "serp-vision/serp-vision-php-sdk": "dev-master"
   }
 }

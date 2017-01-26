@@ -13,7 +13,7 @@ use SERPVision\SERPVisionApi;
 
 require_once '../SERPVision.php';
 
-define("SERPVISION_API_KEY", "MY-API-KEY");
+const SERPVISION_API_KEY = "MY-API-KEY";
 
 $serpVision = new SERPVisionApi();
 $keywordName = 'Fietsen kopen'; // Keyword phrase

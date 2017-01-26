@@ -13,7 +13,7 @@ require_once '../SERPVision.php';
 
 use SERPVision\SERPVisionApi;
 
-define("SERPVISION_API_KEY", "MY-API-KEY");
+const SERPVISION_API_KEY = "MY-API-KEY";
 
 $serpVision = new SERPVisionApi();
 
