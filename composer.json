@@ -1,0 +1,17 @@
+{
+  "name": "SERPVision/SERPVision-php-sdk",
+  "type": "library",
+  "description": "Interact with the SERP Vision API",
+  "homepage": "https://github.com/SERPVision/SERPVision-php-sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "SERP Vision",
+      "homepage": "https://serpvision.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  }
+}
